@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PerfectCRUD
 
 struct PhoneNumber: Codable {
     let personId: UUID

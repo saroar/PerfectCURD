@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PerfectCRUD
 
 // CRUD can work with most Codable types.
 
