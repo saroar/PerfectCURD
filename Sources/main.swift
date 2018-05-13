@@ -19,6 +19,13 @@
 
 import PerfectHTTP
 import PerfectHTTPServer
+import PerfectPostgreSQL
+import PerfectCRUD
+
+// postgres sample configuration
+let db = Database(configuration:
+    try PostgresDatabaseConfiguration(database: postgresTestDBName, host: "localhost"))
+
 
 // An example request handler.
 // This 'handler' function can be referenced directly in the configuration below.
@@ -31,7 +38,7 @@ func handler(request: HTTPRequest, response: HTTPResponse) {
 }
 
 // Configuration data for an example server.
-// This example configuration shows how to launch a server
+// This example configuration shows how to launch a servhttps://github.com/PerfectlySoft/Perfect-CRUD.giter
 // using a configuration dictionary.
 
 
